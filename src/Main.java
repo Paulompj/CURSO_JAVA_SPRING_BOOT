@@ -1,7 +1,12 @@
+import java.util.Locale;
 public class Main {
     public static void main(String[] args) {
-        int x=15;
-        System.out.printf("RESULTADO = %d METROS", x);
+        Locale.setDefault(Locale.US);
+       double x=32.45678;
+        System.out.println(x);
+        System.out.printf("%.2f\n",x);
+        System.out.printf("%.4f\n",x);
+
 
 
     }
