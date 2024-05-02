@@ -23,17 +23,18 @@ public class Exercicio_3 {
             System.out.printf("Seu imc: %.2f\n",imc);
             System.out.println("Voce está abaixo do peso");
         }
-        else if(imc>20.0 && imc<=25.0){
-            System.out.printf("Nome: %s\n",nome);
-            System.out.printf("Seu imc: %.2f\n",imc);
-            System.out.println("Voce está com o peso normal para o seu tamanho");
+        else {//Certeza que o imc ja é maior do que 20,0//
+            if(imc>20.0 && imc<=25.0){
+                System.out.printf("Nome: %s\n",nome);
+                System.out.printf("Seu imc: %.2f\n",imc);
+                System.out.println("Voce está com o peso normal para o seu tamanho");
+            }
+            else{//Certeza que ja é maior que 25,0. Pois nao caiu no if de cima//
+                System.out.printf("Nome: %s\n",nome);
+                System.out.printf("Seu imc: %.2f\n",imc);
+                System.out.println("Voce está obeso");
+            }
         }
-        else if(imc>25.0 && imc<=30.0){
-            System.out.printf("Nome: %s\n",nome);
-            System.out.printf("Seu imc: %.2f\n",imc);
-            System.out.println("Voce está obeso");
-        }
-
         input.close();
     }
 }
