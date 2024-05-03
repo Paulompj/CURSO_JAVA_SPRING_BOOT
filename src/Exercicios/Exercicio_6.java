@@ -22,6 +22,9 @@ public class Exercicio_6 {
             else if(escolhaMenu == 3){
                 alcool+=1;
             }
+            else{
+                System.out.println("Digite um valor entre 1 e 4;");
+            }
             System.out.println("1 - Gasolina");
             System.out.println("2 - Diesel");
             System.out.println("3 - Álcool");
