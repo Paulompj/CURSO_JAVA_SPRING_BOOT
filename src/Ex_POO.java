@@ -13,16 +13,14 @@ public class Ex_POO {
 
         System.out.println("Digite as medidas dos lados do triangulo X:");
         x.a = input.nextDouble();
-        x.a = input.nextDouble();
-        x.a = input.nextDouble();
+        x.b = input.nextDouble();
+        x.c = input.nextDouble();
         System.out.println("Digite as medidas dos lados do triangulo y:");
         y.a = input.nextDouble();
         y.b = input.nextDouble();
         y.c = input.nextDouble();
-        double px = (x.a+x.b+x.c)/2;
-        double py = (y.a+y.b+y.c)/2;
-        double areaX = Math.sqrt(px*(px-x.a)*(px-x.b)*(px-x.c));
-        double areaY = Math.sqrt(py*(py-y.a)*(py-y.b)*(py-y.c));
+        double areaX = x.area();
+        double areaY = y.area();
         System.out.println("A area do triângulo x é: "+areaX);
         System.out.println("A area do triângulo y é: "+areaY);
         if(areaX>areaY){
