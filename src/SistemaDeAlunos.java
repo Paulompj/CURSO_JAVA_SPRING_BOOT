@@ -29,7 +29,7 @@ public class SistemaDeAlunos {
         else{
             System.out.println("Reprovado");
             System.out.println("Sua média: "+estudante.MediaAluno());
-            System.out.printf("Faltaram %.2f pontos para passar",60.0 - estudante.MediaAluno());
+            System.out.printf("Faltaram %.2f pontos para passar",estudante.PontosQueFaltaram());
         }
 
 
