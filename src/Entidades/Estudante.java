@@ -9,6 +9,14 @@ public class Estudante {
         //O máximo das 3 notas é 100
         return nota1+nota2+nota3;
     }
+    public double PontosQueFaltaram(){
+        if(MediaAluno()<60.0){
+            return 60.0 - MediaAluno();
+        }
+        else{
+            return 0.0;
+        }
+    }
 
 
 }
