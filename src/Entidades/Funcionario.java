@@ -3,7 +3,7 @@ package Entidades;
 public class Funcionario {
     public String nome;
     public double salarioBruto;
-    public double imposto;
+    public static double imposto;
     public double SalarioLiquido(){
         return salarioBruto - imposto;
     }
