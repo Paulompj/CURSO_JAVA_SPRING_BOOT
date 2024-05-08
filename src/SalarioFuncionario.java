@@ -15,7 +15,7 @@ public class SalarioFuncionario {
         System.out.print("Digite o salário bruto do funcionário:");
         funcionario.salarioBruto = input.nextDouble();
         System.out.print("Digite o imposto a ser cobrado:");
-        funcionario.imposto = input.nextDouble();
+        Funcionario.imposto = input.nextDouble();
         System.out.println(funcionario.toString());
         System.out.print("Em quantos % voce deseja aumentar o salário do funcionário: ");
         aumento = input.nextDouble();
