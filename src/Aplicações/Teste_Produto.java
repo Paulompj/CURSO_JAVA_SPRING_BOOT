@@ -1,4 +1,4 @@
-package Aplicações;
+/*package Aplicações;
 
 import Entidades.Produto;
 
@@ -14,4 +14,4 @@ public class Teste_Produto {
         System.out.println(p1);
         System.out.println(p2);
     }
-}
+*/
