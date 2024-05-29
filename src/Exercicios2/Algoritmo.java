@@ -9,4 +9,5 @@ public class Algoritmo {
         numExecucoes+=1;
         return numExecucoes;
     }
+
 }
