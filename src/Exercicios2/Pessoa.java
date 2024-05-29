@@ -9,6 +9,11 @@ public class Pessoa {
         this.id = id;
         this.salario = salario;
     }
+    public Pessoa(String nome){
+        this.nome = nome;
+        this.id = 0;
+        this.salario = 0.0;
+    }
     public String getNome(){
         return nome;
     }
