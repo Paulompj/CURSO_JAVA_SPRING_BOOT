@@ -2,7 +2,6 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-javac
 ### Eclipse ###
 .apt_generated
 .classpath
