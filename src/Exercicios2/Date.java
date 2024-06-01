@@ -33,7 +33,7 @@ public class Date {
     public void setAno(int ano) {
         this.ano = ano;
     }
-    public String displayDate(){
+    public String toString(){
         return String.format("%d/%d/%d",dia,mes,ano);
     }
 }
