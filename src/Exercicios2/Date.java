@@ -1,9 +1,17 @@
 package Exercicios2;
 
+import java.time.LocalDate;
+
 public class Date {
     private int dia;
     private int mes;
     private int ano;
+    public Date(){
+        LocalDate x = LocalDate.now();
+        this.dia = x.getDayOfMonth();
+        this.mes = x.getMonthValue();
+        this.ano = x.getYear();
+    }
     public Date(int dia, int mes, int ano){
         this.dia = dia;
         this.mes = mes;
