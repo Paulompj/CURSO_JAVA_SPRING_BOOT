@@ -43,6 +43,10 @@ public class Trabalhador {
         }
     }
 
+    public String getNome() {
+        return nome;
+    }
+
     @Override
     public String toString() {
         return "Trabalhador" +"\n"+
