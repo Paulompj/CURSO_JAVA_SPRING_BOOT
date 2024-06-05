@@ -9,7 +9,7 @@ import java.time.temporal.ChronoUnit;
 
 public class datahora {
     public static void main(String[] args) {
-        LocalDate x = LocalDate.now();
+        /*LocalDate x = LocalDate.now();
         System.out.println("USANDO APENAS LocalDate E FORMATAÇÃO: ");
         System.out.println("Data antes de formatar: "+x);
         DateTimeFormatter formatoBR = DateTimeFormatter.ofPattern("dd/MM/yyyy");
@@ -49,7 +49,10 @@ public class datahora {
         System.out.println("Data de hoje -> Aumentando uma 2 dias: "+fmtFuso.format(teste.plus(2,ChronoUnit.DAYS)));
         System.out.println("Data de hoje -> Diminuindo uma semana: "+fmtFuso.format(teste.minus(7,ChronoUnit.DAYS)));
         System.out.println("Data de hoje -> Diminuindo 2 dias: "+fmtFuso.format(teste.minus(2,ChronoUnit.DAYS)));
-
+        System.out.println("-------------------------");*/
+        DateTimeFormatter formatoBR = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        LocalDate an = LocalDate.parse("2018-08-18");
+        System.out.println(an);
 
 
 
