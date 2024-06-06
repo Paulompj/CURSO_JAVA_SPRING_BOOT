@@ -1,20 +1,22 @@
 package Entidades;
 
+import Exercicios2.Date;
+
 import java.time.LocalDate;
 
 public class Contrato_Por_Hora {
-    private LocalDate data;
+    private Date data;
     private double valorPorHora;
     private double horasTrabalhadas;
-    public Contrato_Por_Hora(LocalDate data, double valorPorHora, double horasTrabalhadas){
+    public Contrato_Por_Hora(Date data, double valorPorHora, double horasTrabalhadas){
         this.data = data;
         this.valorPorHora = valorPorHora;
         this.horasTrabalhadas = horasTrabalhadas;
     }
 
-    public int getMes() {
-        return data.getMonthValue();
-    }
+    public int getMes(){return data.getMes();}
+    public int getDia(){return data.getDia();}
+    public int getAno(){return data.getAno();}
 
     public double getHorasTrabalhadas() {
         return horasTrabalhadas;
@@ -32,12 +34,8 @@ public class Contrato_Por_Hora {
         this.valorPorHora = valorPorHora;
     }
 
-    public LocalDate getData() {
+    public Date getData() {
         return data;
-    }
-
-    public void setData(LocalDate data) {
-        this.data = data;
     }
 
     @Override
