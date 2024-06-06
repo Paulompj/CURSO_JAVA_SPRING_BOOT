@@ -9,7 +9,7 @@ public class Ex1 {
         ArrayList<Integer> lista = new ArrayList<Integer>();
         lista.add(3);
         System.out.println(lista);
-        System.out.println(lista.get(0));
+        System.out.println(lista.get(0).toString());
         System.out.println("------------Vetor----------");
         int[] vetorInteiro = new int[3];
         System.out.println(vetorInteiro);
