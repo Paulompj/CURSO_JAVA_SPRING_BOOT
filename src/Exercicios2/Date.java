@@ -17,6 +17,11 @@ public class Date {
         this.mes = mes;
         this.ano = ano;
     }
+    public Date(String data){
+        this.dia = Integer.parseInt(data.substring(0,2));
+        this.mes = Integer.parseInt(data.substring(3,5));
+        this.ano = Integer.parseInt(data.substring(6,10));
+    }
 
 
     public int getMes() {
