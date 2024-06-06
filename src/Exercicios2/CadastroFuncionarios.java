@@ -35,12 +35,9 @@ public class CadastroFuncionarios {
         return departamento;
     }
     public static Contrato_Por_Hora CadastrarContrato(){
-        System.out.println("Digite a data do contrato:");
-        System.out.println("\tNesse formato: ano-mes-dia");
-        System.out.print("Informe a data: ");
+        System.out.print("Informe a data do contrato: ");
         String data = input.nextLine();
-        DateTimeFormatter BR = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        LocalDate an = LocalDate.parse(data);
+        Date an = new Date(data);
         System.out.print("Digite o valor/Hora: ");
         double valorHora = input.nextDouble();
         System.out.print("Digite a quantidade de horas trabalhadas: ");
