@@ -1,6 +1,7 @@
 package Entidades;
 
 import Entidades.Enums.Nivel_Trabalho;
+import Exercicios2.Date;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -21,7 +22,7 @@ public class Trabalhador {
         this.departamento = departamento;
         Contratos.add(new Contrato_Por_Hora(x.getData(),x.getValorPorHora(),x.getHorasTrabalhadas()));
     }
-    public void AdicionarContrato(LocalDate data, double valorPorHora, double horasTrabalhadas){
+    public void AdicionarContrato(Date data, double valorPorHora, double horasTrabalhadas){
         Contratos.add(new Contrato_Por_Hora(data,valorPorHora,horasTrabalhadas));
     }
     public boolean ContratoCheioVazio(){
