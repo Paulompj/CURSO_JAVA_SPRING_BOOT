@@ -9,7 +9,7 @@ public class Teste {
         Cachorro pink = new Cachorro("Pink");
         //System.out.println(pink.barulho());
         Animal x = new Cachorro("Dogao");
-        System.out.println(Animal(pink));
+        Cachorro rabito = new Cachorro("Rabito");
     }
     public static String Animal(Animal y){
         if (y instanceof Cachorro){
