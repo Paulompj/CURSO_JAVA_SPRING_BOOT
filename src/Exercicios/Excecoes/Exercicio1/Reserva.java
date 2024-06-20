@@ -1,5 +1,7 @@
 package Exercicios.Excecoes.Exercicio1;
 
+import Exercicios.Excecoes.Exercicio1.Exception.DomainException;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
@@ -9,7 +11,10 @@ public class Reserva {
     private Date Entrada;
     private Date Saida;
     static SimpleDateFormat formatacao = new SimpleDateFormat("dd/MM/yyyy");
-    public Reserva(Integer num, Date entrada, Date saida){
+    public Reserva(Integer num, Date entrada, Date saida) throws DomainException {
+        if(entrada.after(saida)){
+            throw new DomainException("ERRRO!\nEntrada realizada é posterior a saída! Deveria ser Antes");
+        }
         this.Entrada = entrada;
         this.Saida = saida;
         this.Numero_Quarto = num;
@@ -18,7 +23,10 @@ public class Reserva {
         long diff = Saida.getTime() - Entrada.getTime();//Diff = milissegundos
         return TimeUnit.DAYS.convert(diff,TimeUnit.MILLISECONDS);
     }
-    public void atualizarData(Date entrada, Date saida){
+    public void atualizarData(Date entrada, Date saida) throws DomainException {
+        if(entrada.after(saida)){
+            throw new DomainException("ERRRO!\nEntrada realizada é posterior a saída! Deveria ser Antes");
+        }
         this.Entrada = entrada;
         this.Saida = saida;
     }
