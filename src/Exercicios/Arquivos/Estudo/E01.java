@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.Scanner;
-//LENDO OS DADOS DO TXT//
+//LENDO OS DADOS DO TXT COM SCANNER
 public class E01 {
     public static void main(String[] args) {
         File file = new File("C:\\Users\\PC\\Desktop\\in.txt");
